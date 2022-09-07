@@ -7,51 +7,72 @@
     <title>Resume</title>
     <meta name="keywords" content="HTML, CSS" >
     <meta name="description" content="Это базовый курс по HTML" >
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <img src="imgs/z.png" alt="Здсеь Я" width="150">
+<div class="container">
+
+ <div class="info">
+    <img src="imgs/z.png" alt="Здсеь Я" class="avatar">
+    <div class="info-text">
     <h1>Михаил Курбатов</h1> 
-    <p>Я начинаю свой <em>путь</em> в программировании. <strong><em>Это очень весело и интересно</em></strong></p>
-    <p><strong>Мои хобби</strong></p>
-    <ol>
+
+
+    <p>Я начинаю свой путь в программировании. Это очень весело и интересно</p>
+
+    
+    <h4>Список социальных сетей:</h4>
+    <a href="https://t.me/A110011010" target="_blank">Telegram</a>
+</div>
+</div>
+<div class="card bg-green">
+    <h2>Мои хобби</h2>
+
+    <ol class="list">
         <li>Музыка</li>
         <li>Игры</li>
         <li>Сон</li>
     </ol>
-    <p><strong>Опыт работы</strong></p>
-    <table width="500">
-        <thead>
+</div>
+    <div class="card bg-yellow">
+    <h2>Опыт работы</h2>
+    <table class="table">
+        <!-- <thead>
             <th>Название</th>
             <th>Должность</th>
             <th>Год</th>
-        </thead>
+        </thead> -->
         <tbody>
             <td>Тинькофф Банк</td>
             <td>Специалист</td>
             <td>2021-сейчас</td>
         </tbody>
     </table>
-    <hr>
-    <p><strong>Список социальных сетей:</strong></p>
-    <a href="https://t.me/A110011010" target="_blank">Telegram</a>
-    <hr>
-    <p><strong>Свявзаться со мной</strong></p>
-<form>
-        <div>
+    </div>
+    
+    
+<form class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-row">
+        <div class="form-group">
             <label for="text">Ваше Имя:</label>
             <input type="text" id="text" placeholder="Введите Имя">
         </div>
-        <div>
+        <div class="form-group">
             <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите emal">
+            <input type="email" id="email" placeholder="Введите email">
         </div>
-        <div>
+    </div>
+        <div class="form-group">
             <label for="message">Ваше сообщение:</label>
             <br>
             <textarea id="message" placeholder="Введите сообщение..." cols="20" rows="5"></textarea>
             
         </div>
-        <button type="submit">Отправить!</button>
-</form>    
+
+        <input class="btn" type="submit" value="Отправить!">
+</form>  
+
+     
 </body>
 </html>
